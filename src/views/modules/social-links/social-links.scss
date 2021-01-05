@@ -1,0 +1,32 @@
+//- src/views/modules/social-links/social-links.scss
+
+.social-links {
+  align-items: center;
+  display: flex;
+
+  a {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    border: 1px solid #ffffff;
+    display: flex;
+    flex-shrink: 0;
+    height: 30px;
+    justify-content: center;
+    margin: 0 6px;
+    transition: border-color 0.3s;
+    width: 30px;
+
+    &:hover {
+      border-color: #00ccff;
+
+      svg {
+        fill: #00ccff;
+      }
+    }
+  }
+
+  svg {
+    fill: #ffffff;
+  }
+}

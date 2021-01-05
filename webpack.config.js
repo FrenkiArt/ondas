@@ -43,7 +43,7 @@ module.exports = {
     index: './src/index.js',
   },
   output: {
-    filename: './assets/js/index.js',
+    filename: './assets/js/main.js',
     path: path.resolve(__dirname, 'dist'),
     // assetModuleFilename: '[name].[ext]',
   },
@@ -77,10 +77,10 @@ module.exports = {
           from: 'src/assets/static/**/*',
           to: path.resolve(__dirname, 'dist/assets/static/[name].[ext]'),
         },
-        {
-          from: 'src/assets/images/**/*',
-          to: path.resolve(__dirname, 'dist/assets/images/[name].[ext]'),
-        },
+        // {
+        //   from: 'src/assets/images/**/*',
+        //   to: path.resolve(__dirname, 'dist/assets/images/[name].[ext]'),
+        // },
         {
           from: 'src/assets/svg/**/*',
           to: path.resolve(__dirname, 'dist/assets/svg/[name].[ext]'),
@@ -99,7 +99,7 @@ module.exports = {
   }, */
   module: {
     rules: [
-      /* {
+      {
         test: /\.(sa|sc|c)ss$/,
         use: [
           // isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
@@ -113,19 +113,19 @@ module.exports = {
           'postcss-loader',
           'sass-loader',
         ],
-      }, */
+      },
       {
         test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/images/[name].[ext]',
+          filename: 'assets/images/[name][ext]',
         },
       },
       {
         test: /\.(svg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/svg/[name].[ext]',
+          filename: 'assets/svg/[name][ext]',
         },
       },
       {
@@ -173,7 +173,7 @@ module.exports = {
   },
 };
 
-if (isDev) {
+/* if (isDev) {
   module.exports.module.rules.push({
     test: /\.(sa|sc|c)ss$/,
     use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
@@ -193,4 +193,4 @@ if (isDev) {
       'sass-loader',
     ],
   });
-}
+} */

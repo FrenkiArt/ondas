@@ -1,10 +1,15 @@
 //- src/views/modules/footer/footer.pug
 |
 |
-footer#footer.footer
+footer#footer.footer 
   |
   |
-  include ../navigation/navigation.pug
+  .anime-planet
+    img(src="/assets/svg/planet.svg", alt="", loading="lazy") 
+  include ../navigation/navigation.pug 
+  .cntr
+    .footer__text All right reserved 
+    include ../social-links/social-links.pug 
   |
   |
 |

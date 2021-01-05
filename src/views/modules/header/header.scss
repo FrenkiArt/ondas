@@ -17,6 +17,10 @@
     // .navigation__a
     &__a {
       margin-right: 24px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
   }
 }

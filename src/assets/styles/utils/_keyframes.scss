@@ -27,3 +27,13 @@
     opacity: 1;
   }
 }
+
+@keyframes around {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359.9deg);
+  }
+}

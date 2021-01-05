@@ -1,0 +1,22 @@
+//- src/views/modules/header/header.scss
+
+.header {
+  background-color: green;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  width: 100%;
+
+  .navigation {
+    // .navigation__logo
+    &__logo {
+      margin-right: 76px;
+    }
+
+    // .navigation__a
+    &__a {
+      margin-right: 24px;
+    }
+  }
+}

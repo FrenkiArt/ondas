@@ -6,7 +6,9 @@
     "node": true
   },
   "rules": {
-    // "linebreak-style": ["error", "windows"]
+    "linebreak-style": 0,
+    "indent": 0
+    // "max-len": 0
   },
   "extends": ["eslint:recommended", "google"]
 }

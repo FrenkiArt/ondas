@@ -1,0 +1,22 @@
+//- src/views/modules/footer/footer.scss
+
+.footer {
+  background-color: green;
+
+  .navigation {
+    // .navigation__logo
+    /* &__logo {
+    } */
+
+    // .navigation__a
+    &__a {
+      margin-right: 32px;
+    }
+
+    .cntr {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

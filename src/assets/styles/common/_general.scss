@@ -11,10 +11,26 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Catamaran', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  background-color: #cecece;
 }
 
-.container {
+.footer {
+  margin-top: auto;
+}
 
+.cntr {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 h1,
@@ -45,6 +61,7 @@ li {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .hide {

@@ -1,0 +1,36 @@
+//- src/views/modules/navigation/navigation.scss
+
+.navigation {
+  // .navigation__logo
+  &__logo {
+    max-height: 40px;
+    max-width: 122px;
+  }
+
+  // .navigation__nav
+  /* &__nav {
+  } */
+
+  // .navigation__a
+  &__a {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.01em;
+    line-height: 180%;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .cntr {
+    align-items: center;
+    display: flex;
+  }
+}

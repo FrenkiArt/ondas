@@ -1,30 +1,38 @@
 extends ../templates/_template.pug
 
 block title
-  title Заголовок
+  title Ondas
 
 block basicSeo
-  meta(name='description' content='Первая образовательная онлайн-платформа, созданная преподами!')
+  meta(name='description' content='Ondas - Make money with decentralized gaming')
   meta(name='keywords', content='')
   meta(name='author' content='')
 
 block content
 
-  //- Desktop page
-  h1 Начальная страница
+  //- Page Index
   |
   |
-  include ../components/breadcrumbs
+  main.page-index
+    |
+    |
+    .cntr
+      h1 Начальная страница
+    |
+    |
+  |
+  |
+  // include ../components/breadcrumbs
   |
   |
   
   |
   |
-  include ../modules/block-img/block-img.pug
+  // include ../modules/block-img/block-img.pug
   |
   |
-  <svg width="12" height="16">
-    <use xlink:href="./assets/svg/svg_sprite.svg#geo"></use>
-  </svg>
+  // <svg width="12" height="16">
+  //   <use xlink:href="./assets/svg/svg_sprite.svg#geo"></use>
+  // </svg>
   |
   |

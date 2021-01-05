@@ -43,15 +43,15 @@ module.exports = {
     index: './src/index.js',
   },
   output: {
-    filename: './assets/js/main.js',
+    filename: './assets/js/index.js',
     path: path.resolve(__dirname, 'dist'),
     // assetModuleFilename: '[name].[ext]',
   },
   devtool: isDev ? 'inline-source-map' : 'source-map',
   devServer: {
-    compress: true,
+    compress: false,
     contentBase: path.join(__dirname, 'dist'),
-    hot: true,
+    // hot: true,
     open: true,
     overlay: true,
     port: 9000,

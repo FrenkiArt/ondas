@@ -1,0 +1,62 @@
+//- src/views/modules/roadmap/roadmap.scss
+
+.roadmap {
+  position: relative;
+  padding: 175px 0 175px;
+  background: url('/src/assets/svg/roadmap_stars.svg'),
+    radial-gradient(
+      101.06% 142.89% at 73.25% 90.95%,
+      #0b0238 49.52%,
+      #4122ff 100%
+    );
+  background-repeat: no-repeat;
+
+  &::before {
+    background: linear-gradient(
+      66.22deg,
+      rgba(255, 51, 137, 0) 91.85%,
+      rgba(255, 51, 137, 0.8) 112.07%
+    );
+    bottom: 0;
+    content: '';
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &::after {
+    background: linear-gradient(
+        150deg,
+        rgba(255, 51, 137, 0) 64.31%,
+        rgba(255, 51, 137, 0.8) 186.15%
+      ),
+      linear-gradient(225deg, rgba(0, 26, 255, 0) 61.27%, #1a00bb 237.81%);
+    bottom: 0;
+    content: '';
+    height: 460px;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+  }
+
+  // .roadmap__left
+  &__left {
+    max-width: 440px;
+
+    p {
+      margin-bottom: 32px;
+    }
+  }
+
+  // .roadmap__right
+  &__right {
+  }
+
+  .cntr {
+    display: flex;
+    align-items: center;
+  }
+}

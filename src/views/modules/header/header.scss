@@ -1,12 +1,13 @@
 //- src/views/modules/header/header.scss
 
 .header {
-  background-color: green;
+  // background-color: green;
   left: 0;
   position: absolute;
   right: 0;
   top: 48px;
   width: 100%;
+  z-index: 2;
 
   .navigation {
     // .navigation__logo

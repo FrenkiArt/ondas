@@ -37,3 +37,79 @@
     transform: rotate(359.9deg);
   }
 }
+
+@keyframes comet_1 {
+  0% {
+    transform: translate(-400px, 200px);
+    opacity: 1;
+  }
+  8% {
+    opacity: 1;
+  }
+  10% {
+    transform: translate(800px, -300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(800px, -300px);
+    opacity: 0;
+  }
+}
+
+@keyframes comet_2 {
+  0% {
+    transform: translate(-250px, 250px);
+    opacity: 1;
+  }
+  8% {
+    opacity: 1;
+  }
+  10% {
+    transform: translate(350px, -350px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(350px, -350px);
+    opacity: 0;
+  }
+}
+
+@keyframes comet_3 {
+  0% {
+    transform: translate(-900px, -400px);
+    opacity: 0;
+  }
+  10% {
+    transform: translate(-700px, -300px);
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    transform: translate(120px, 50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(120px, 50px);
+    opacity: 0;
+  }
+}
+
+@keyframes comet_4 {
+  0% {
+    transform: translate(-500px, -500px);
+    opacity: 1;
+  }
+  8% {
+    opacity: 1;
+  }
+  10% {
+    transform: translate(50px, 50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(50px, 50px);
+    opacity: 0;
+  }
+}

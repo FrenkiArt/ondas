@@ -46,6 +46,13 @@ h6 {
   margin: 0;
 }
 
+.h2 {
+  font-size: 40px;
+  letter-spacing: 0.005em;
+  line-height: 66px;
+  margin-bottom: 35px;
+}
+
 a {
   text-decoration: none;
 }
@@ -57,10 +64,13 @@ p {
 ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 li {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -75,6 +85,31 @@ svg {
 .hide {
   opacity: 0;
   pointer-events: none;
+}
+
+.btn {
+  background-color: #260a67;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  padding: 18px 36px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 12px;
+  line-height: 20;
+  letter-spacing: 1px;
+  color: #18d1ff;
+  border-radius: 84px;
+  box-sizing: border-box;
+  text-decoration: none;
+  height: 56px;
+  overflow: hidden;
+
+  &:hover {
+    background-color: #18d1ff;
+    color: #260a67;
+  }
 }
 
 .anime-planet {

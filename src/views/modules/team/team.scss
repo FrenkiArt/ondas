@@ -1,6 +1,241 @@
 //- src/views/modules/team/team.scss
 
 .team {
+  background: url('/src/assets/svg/team_stars.svg'),
+    radial-gradient(
+      421.16% 256.12% at 46.72% 31.86%,
+      #0b0238 2.55%,
+      #ff3389 100%
+    );
+  /* background: linear-gradient(0deg, #ff3389 -368.25%, #14043b 100.05%); */
+  background-position: center center, center center;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  padding: 80px 0 90px;
+  position: relative;
+  overflow-x: hidden;
+
+  /* @media screen and(max-width: 1400px) {
+    overflow: initial;
+  } */
+
+  &::before {
+    background: linear-gradient(
+      45deg,
+      rgba(0, 26, 255, 0) 61.73%,
+      #1a00bb 216.4%
+    );
+    bottom: 0;
+    content: '';
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
   .cntr {
+    position: relative;
+  }
+
+  .team-comet-left-1 {
+    position: absolute;
+    top: 260px;
+    left: -140px;
+    opacity: 0;
+    animation: comet_1 60s linear 0s infinite normal;
+
+    @media screen and(max-width: 900px) {
+      display: none;
+    }
+  }
+
+  .team-comet-left-2 {
+    position: absolute;
+    top: 330px;
+    left: -120px;
+    opacity: 0;
+    animation: comet_2 70s linear 0s infinite normal;
+
+    @media screen and(max-width: 900px) {
+      display: none;
+    }
+  }
+
+  .team-comet-right-1 {
+    position: absolute;
+    right: -16px;
+    bottom: -26px;
+    opacity: 0;
+    animation: comet_3 70s linear 0s infinite normal;
+
+    @media screen and(max-width: 900px) {
+      display: none;
+    }
+  }
+  .team-comet-right-2 {
+    position: absolute;
+    right: 60px;
+    bottom: 40px;
+    opacity: 0;
+
+    animation: comet_4 120s linear 0s infinite normal;
+
+    @media screen and(max-width: 900px) {
+      display: none;
+    }
+  }
+
+  // .team__planet
+  &__planet {
+    position: absolute;
+    top: 0;
+    left: -160px;
+    pointer-events: none;
+    animation: around 30s linear 0s infinite forwards;
+
+    @media screen and(max-width: 1400px) {
+      left: 0;
+    }
+  }
+
+  // .team__satellite
+  &__satellite {
+    position: absolute;
+    bottom: -10px;
+    right: -220px;
+    pointer-events: none;
+    animation: around 120s linear 0s infinite forwards;
+
+    @media screen and(max-width: 1400px) {
+      right: 16px;
+    }
+
+    @media screen and(max-width: 1200px) {
+      right: 30px;
+    }
+
+    @media screen and(max-width: 640px) {
+      bottom: -70px;
+    }
+  }
+
+  .h2 {
+    text-align: center;
+    position: relative;
+  }
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  // max-width: 760px;
+  padding-top: 105px;
+  flex-wrap: wrap;
+  position: relative;
+
+  @media screen and(max-width: 900px) {
+    padding-top: 0;
+  }
+
+  // .team-list__item
+  &__item {
+    max-width: 220px;
+    margin: 0 23px 35px;
+    flex-shrink: 0;
+
+    @media screen and(max-width: 900px) {
+      margin: 0 35px 35px;
+    }
+
+    @media screen and(max-width: 640px) {
+      margin: 0 20px 35px;
+    }
+
+    &:nth-of-type(2) {
+      margin-top: -105px;
+
+      @media screen and(max-width: 900px) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.team-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  // .team-cart__wrap-img
+  &__wrap-img {
+    margin-bottom: 33px;
+    border-radius: 20px;
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+    position: relative;
+    /*border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      107.61deg,
+      rgba(104, 78, 244, 0.7) 8.54%,
+      rgba(0, 204, 255, 0.7) 89.01%
+    );*/
+
+    &::before {
+      content: '';
+      position: absolute;
+      border: 4px solid #00ccff;
+      border-radius: inherit;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.7;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+    }
+  }
+
+  // .team-cart__soc
+  &__soc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    background: linear-gradient(107.61deg, #684ef4 8.54%, #00ccff 89.01%),
+      rgba(255, 255, 255, 0.1);
+    border: 3px solid #0f0444;
+
+    svg {
+      fill: #ffffff;
+      transform: translate(2px, 0);
+    }
+  }
+
+  // .team-cart__title
+  &__title {
+    margin-bottom: 6px;
+  }
+
+  // .team-cart__text
+  &__text {
+    font-size: 12px;
   }
 }

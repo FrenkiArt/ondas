@@ -47,11 +47,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     // assetModuleFilename: '[name].[ext]',
   },
-  devtool: isDev ? 'inline-source-map' : 'source-map',
+  // devtool: isDev ? 'inline-source-map' : 'source-map',
   devServer: {
     compress: false,
     contentBase: path.join(__dirname, 'dist'),
-    // hot: true,
+    hot: true,
     open: true,
     overlay: true,
     port: 9000,
@@ -77,10 +77,10 @@ module.exports = {
           from: 'src/assets/static/**/*',
           to: path.resolve(__dirname, 'dist/assets/static/[name].[ext]'),
         },
-        // {
-        //   from: 'src/assets/images/**/*',
-        //   to: path.resolve(__dirname, 'dist/assets/images/[name].[ext]'),
-        // },
+        {
+          from: 'src/assets/images/**/*',
+          to: path.resolve(__dirname, 'dist/assets/images/[name].[ext]'),
+        },
         {
           from: 'src/assets/svg/**/*',
           to: path.resolve(__dirname, 'dist/assets/svg/[name].[ext]'),

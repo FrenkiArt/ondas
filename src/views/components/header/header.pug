@@ -1,0 +1,17 @@
+- var navLinks = [{link: "./about.html", name: "О нас" }, {link: "./about.html", name: "Инвестиционные предложения"}, {link: "./about.html", name: "Индустриальный парк"}, {link: "./about.html", name: "Платные услуги"}, {link: "contacts.html", name: "Контакты", last: true}, {link: "news.html", name: "Новости", last: true}];
+
+mixin navLink(link, name, last)
+  li
+    if(last)
+      a(href=link title=name).nav__link.last-link=name
+    else
+      a(href=link title=name).nav__link=name
+
+header.header
+  //-a(href="./" title="Главная").logo
+    img(src="assets/svg/logo.svg", alt="" loading="lazy")
+  ul.nav
+    for i in navLinks
+      +navLink(i.link, i.name, i.last)
+  |
+  |

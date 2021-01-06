@@ -12,6 +12,23 @@ mixin navLink(link, name, last)
     else
       a(href=link).nav-link=name
 
+mixin readMore(text)
+  |
+  |
+  .link-read-more
+    |
+    |
+    span.link-read-more__text=text 
+    |
+    |
+    <svg width="10" height="7" class="link-read-more__arrow">
+      <use xlink:href="./assets/svg/svg_sprite.svg#arr-bottom"></use>
+    </svg> 
+    |
+    |
+  |
+  |
+
 // Radio button
 mixin radio(args) 
     .radio(id=attributes.id ? attributes.id : null, class=attributes.class ? attributes.class : null): label

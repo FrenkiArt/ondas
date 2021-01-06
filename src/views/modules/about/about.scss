@@ -1,0 +1,19 @@
+//- src/views/modules/about/about.scss
+
+.for-developers {
+  min-height: 100px;
+  padding: 160px 0;
+  background: url('/src/assets/svg/for-developers_bg.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media screen and(max-width: 640px) {
+    padding: 70px 0 70px;
+  }
+
+  .cntr {
+    @media screen and(max-width: 1000px) {
+    }
+  }
+}

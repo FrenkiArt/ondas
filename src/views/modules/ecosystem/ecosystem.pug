@@ -1,4 +1,5 @@
 //- src/views/modules/ecosystem/ecosystem.pug
+include ../../mixins/list.pug
 |
 |
 section#ecosystem.ecosystem 
@@ -25,11 +26,7 @@ section#ecosystem.ecosystem
         p The Ondas ecosystem, powered by our native token 
       |
       |
-      .link-read-more
-        span.link-read-more__text Read More 
-        <svg width="10" height="7" class="link-read-more__arrow">
-          <use xlink:href="./assets/svg/svg_sprite.svg#arr-bottom"></use>
-        </svg> 
+      +readMore('Read More')
       |
       |
     |

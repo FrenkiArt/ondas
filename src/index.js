@@ -14,6 +14,8 @@ import './views/modules/social-links/social-links.scss';
 import './views/modules/team/team.scss';
 import './views/modules/roadmap/roadmap.scss';
 import './views/modules/ecosystem/ecosystem.scss';
+import './views/modules/for-developers/for-developers.scss';
+import './views/modules/about/about.scss';
 
 window.onresize = () => {
   setTimeout(() => {

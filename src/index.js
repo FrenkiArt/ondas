@@ -12,7 +12,10 @@ import './views/modules/navigation/navigation.scss';
 import './views/modules/footer/footer.scss';
 import './views/modules/social-links/social-links.scss';
 import './views/modules/team/team.scss';
+import './views/modules/roadmap/roadmap.scss';
 
 window.onresize = () => {
-  console.log(window.innerWidth);
+  setTimeout(() => {
+    console.log(window.innerWidth);
+  }, 1);
 };

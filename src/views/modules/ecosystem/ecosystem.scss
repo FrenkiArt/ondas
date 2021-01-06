@@ -1,0 +1,55 @@
+//- src/views/modules/ecosystem/ecosystem.scss
+
+.ecosystem {
+  display: flex;
+  align-items: center;
+  min-height: 1024px;
+  padding: 100px 0;
+  background: url('/src/assets/svg/ecosystem_bg_2.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media screen and(max-width: 640px) {
+    padding: 70px 0 40px;
+  }
+
+  // .ecosystem__left
+  /* &__left {
+  } */
+
+  // .ecosystem__right
+  &__right {
+    max-width: 440px;
+    flex-shrink: 0;
+    width: 100%;
+
+    p {
+      margin-bottom: 32px;
+    }
+  }
+
+  // .ecosystem__img
+  &__img {
+    // transition: all 0.3s;
+    animation: ecosystem 15s linear 0s infinite forwards;
+  }
+
+  .cntr {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+
+    @media screen and(max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+
+  .h2 {
+    @media screen and(max-width: 640px) {
+      font-size: 34px;
+      line-height: 1.65;
+      margin-bottom: 30px;
+    }
+  }
+}

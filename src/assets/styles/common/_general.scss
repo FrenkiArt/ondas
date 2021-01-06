@@ -117,3 +117,47 @@ svg {
     animation: around 60s linear 0s infinite forwards;
   }
 }
+
+.link-read-more {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #ffffff;
+
+  // .link-read-more__text
+  &__text {
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+  }
+
+  // .link-read-more__arrow
+  &__arrow {
+    margin-left: 8px;
+  }
+
+  &:hover {
+    color: #18d1ff;
+  }
+}
+
+.link-read-more__wrapper.open {
+  .link-read-more__target {
+    position: relative;
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  .link-read-more {
+    display: none;
+  }
+}
+
+.link-read-more__target {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}

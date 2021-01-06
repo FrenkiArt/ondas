@@ -113,3 +113,21 @@
     opacity: 0;
   }
 }
+
+@keyframes ecosystem {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  25% {
+    transform: rotate(2deg) scale(0.9);
+  }
+  50% {
+    transform: rotate(0) scale(0.8);
+  }
+  75% {
+    transform: rotate(-2deg) scale(0.9);
+  }
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}

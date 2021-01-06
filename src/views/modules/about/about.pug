@@ -8,7 +8,74 @@ section#about.about
   .cntr
     |
     |
-      
+    .about__left
+      |
+      |
+      img(src="assets/svg/about-cart__bg.svg", alt="", loading="lazy").about-cart__bg
+      |
+      |
+      .about-cart
+        |
+        |
+        .about-cart__wrap-icon
+          <svg width="25" height="27">
+            <use xlink:href="./assets/svg/svg_sprite.svg#about-cart-1"></use>
+          </svg>
+        |
+        |
+        .about-cart__wrap-icon
+          <svg width="27" height="27">
+            <use xlink:href="./assets/svg/svg_sprite.svg#about-cart-2"></use>
+          </svg>
+        |
+        |
+        .about-cart__wrap-icon
+          <svg width="25" height="25">
+            <use xlink:href="./assets/svg/svg_sprite.svg#about-cart-3"></use>
+          </svg>
+        |
+        |
+        .about-cart__wrap-icon
+          <svg width="26" height="27">
+            <use xlink:href="./assets/svg/svg_sprite.svg#about-cart-4"></use>
+          </svg>
+        |
+        |
+        img(src="assets/svg/ondas_logo.svg", alt="" loading="lazy").about-cart__logo
+        |
+        |
+        .about-cart__text whitepaper
+        |
+        |
+        a(href="#" download).btn.about-cart__btn Read the whitepaper
+        |
+        |
+      |
+      |
+    |
+    |
+    .about__right.link-read-more__wrapper
+      |
+      |
+      h2.h2 About Us
+      |
+      |
+      p Ondas is a state of the art decentralized gaming platform that represents a paradigm shift in the way gamers interact with the world.
+      |
+      |
+      p Gamers and gaming enthusiasts everywhere can now engage in their favorite hobby with the added thrill of earning money.
+      |
+      |
+      p NFT in-game assets that gamers earn can be converted into crypto using Ondas tokens.
+      |
+      |
+      .link-read-more__target
+        p NFT in-game assets that gamers earn can be converted into crypto using Ondas tokens.
+      |
+      |
+      +readMore('Read More')
+      |
+      |
     |
     |
   |

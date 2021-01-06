@@ -23,5 +23,11 @@
         margin-right: 0;
       }
     }
+
+    .cntr {
+      @media screen and(max-width: 640px) {
+        flex-direction: column;
+      }
+    }
   }
 }

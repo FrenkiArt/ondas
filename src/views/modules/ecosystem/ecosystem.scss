@@ -13,8 +13,13 @@
   margin-top: -5px;
   z-index: 1;
 
+  @media screen and(max-width: 1000px) {
+    margin-top: -10px;
+  }
+
   @media screen and(max-width: 640px) {
     padding: 70px 0 40px;
+    min-height: auto;
   }
 
   // .ecosystem__left

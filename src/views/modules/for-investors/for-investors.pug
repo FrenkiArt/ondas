@@ -1,0 +1,107 @@
+//- src/views/modules/for-investors/for-investors.pug
+include ../../mixins/list.pug
+|
+|
+section#for-investors.for-investors 
+  |
+  |
+  .cntr
+    |
+    |  
+    .for-investors__left
+      |
+      |
+      img(src="assets/svg/invest_img_meteor.svg", alt="" loading="lazy").invest-cart__meteor
+      |
+      |
+      .invest-cart.invest-cart--man
+        |
+        | 
+        .invest-cart__wrap-img
+          |
+          |
+          img(src="assets/svg/invest_img_man_cloud.svg", alt="" loading="lazy").invest-cart__cloud
+          |
+          |
+          img(src="assets/svg/invest_img_man.svg", alt="" loading="lazy").invest-cart__img
+          |
+          |
+        |
+        |
+        .invest-cart__title Game development earnings
+        |
+        |
+        .invest-cart__text  Investors receive a cut of every game transaction
+        |
+        |
+        a(href="#").btn.invest-cart__btn Read the whitepaper
+        |
+        | 
+      |
+      |
+      .invest-cart.invest-cart--insurance.active
+        |
+        | 
+        .invest-cart__wrap-img
+          |
+          |
+          img(src="assets/svg/invest_img_insurance_cloud.svg", alt="" loading="lazy").invest-cart__cloud
+          |
+          |
+          img(src="assets/svg/invest_img_insurance.svg", alt="" loading="lazy").invest-cart__img
+          |
+          |
+        |
+        |
+        .invest-cart__title The Vaults
+        |
+        |
+        .invest-cart__text Stake tokens in liquidity contracts to enable lower trading slippage
+        |
+        |
+        a(href="#").btn.invest-cart__btn Read the whitepaper
+        |
+        |  
+      |
+      |
+      ul.invest-cart__pagination
+        li.bullet
+          img(src="assets/svg/bullet_active.svg", alt="" loading="lazy").bullet__bg
+          img(src="assets/svg/bullet.svg", alt="" loading="lazy").bullet__centr
+        li.bullet.active
+          img(src="assets/svg/bullet_active.svg", alt="" loading="lazy").bullet__bg
+          img(src="assets/svg/bullet.svg", alt="" loading="lazy").bullet__centr
+      |
+      |
+    |
+    |
+    .for-investors__right.link-read-more__wrapper
+      |
+      | 
+      .for-investors__text
+        |
+        |
+        h2.h2 For investors
+        |
+        |
+        p Ondas gives investors the opportunity to make returns in multiple ways. Our multifaceted income methods for investors permit far higher potential returns than other similar platforms, along with a more stable stream of passive income. 
+        |
+        |
+        p At Ondas, investors pride themselves in the fact that they are backing something real, and with utility - indie game developers & new games benefit the entire gaming community at large.
+        |
+        |
+        .link-read-more__target
+          p At Ondas, investors pride themselves in the fact that they are backing something real, and with utility - indie game developers & new games benefit the entire gaming community at large. 
+        |
+        |
+        +readMore('Read More')
+        |
+        |
+      |
+      |
+    |
+    |
+  |
+  |
+|
+|

@@ -1,12 +1,6 @@
 //- src/views/modules/footer/footer.scss
 
 .footer {
-  /* background-image: url('/src/assets/svg/footer_planet.svg'),
-    url('/src/assets/svg/footer_stars.svg'),
-    linear-gradient(175.43deg, #ff3389 -368.25%, #14043b 100.05%);
-  background-position: center bottom, center center, center center; 
-  background-size: contain, contain, cover; */
-
   align-items: center;
   background-image: url('/src/assets/svg/footer_stars.svg'),
     linear-gradient(180deg, #ff3389 -368.25%, #14043b 100.05%);
@@ -21,6 +15,11 @@
   // .footer__text
   &__text {
     margin-bottom: 23px;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
   }
 
   &::before {

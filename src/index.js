@@ -16,6 +16,7 @@ import './views/modules/roadmap/roadmap.scss';
 import './views/modules/ecosystem/ecosystem.scss';
 import './views/modules/for-developers/for-developers.scss';
 import './views/modules/about/about.scss';
+import './views/modules/for-players/for-players.scss';
 
 window.onresize = () => {
   setTimeout(() => {

@@ -1,0 +1,148 @@
+//- src/views/modules/for-players/for-players.scss
+
+.for-players {
+  min-height: 1024px;
+  padding: 160px 0;
+  background: url('/src/assets/svg/for-players_bg.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  margin-top: -2px;
+  position: relative;
+
+  @media screen and(max-width: 1000px) {
+    padding: 70px 0 40px;
+  }
+
+  @media screen and(max-width: 640px) {
+    min-height: auto;
+  }
+
+  // .for-players__left
+  &__left {
+    position: relative;
+    max-width: 440px;
+
+    @media screen and(max-width: 1000px) {
+      margin-bottom: 60px;
+    }
+
+    p {
+      margin-bottom: 32px;
+    }
+  }
+
+  // .for-players__right
+  &__right {
+    max-width: 465px;
+  }
+
+  .cntr {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and(max-width: 1000px) {
+    }
+  }
+}
+
+.games-list {
+  display: flex;
+  flex-direction: column;
+
+  // .games-list__item
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+
+    @media screen and(max-width: 640px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &:nth-of-type(1) {
+      .games-list__way {
+        left: 88px;
+        top: 180px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      .games-list__way {
+        left: 68px;
+        top: 172px;
+      }
+    }
+  }
+
+  // .games-list__wrap-svg
+  &__wrap-svg {
+    width: 195px;
+  }
+
+  // .games-list__svg
+  /* &__svg {
+  } */
+
+  // .games-list__text
+  &__text {
+    max-width: 270px;
+    width: 100%;
+
+    @media screen and(max-width: 640px) {
+      max-width: 100%;
+    }
+  }
+
+  // .games-list__way
+  &__way {
+    position: absolute;
+
+    @media screen and(max-width: 640px) {
+      display: none;
+    }
+  }
+}
+
+.for-players__plane {
+  position: absolute;
+  pointer-events: none;
+  width: 486px;
+  height: 570px;
+  left: 50%;
+  bottom: -270px;
+  transform: translate(320px, 0);
+
+  @media screen and(max-width: 1000px) {
+    transform: translate(0, 0);
+  }
+
+  @media screen and(max-width: 640px) {
+    display: none;
+  }
+
+  .big-planet {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .small-planet {
+    position: absolute;
+    top: 0;
+    left: 270px;
+    display: none;
+  }
+  .ship {
+    position: absolute;
+    left: -120px;
+    bottom: -160px;
+    transform: scale(1.3);
+  }
+}

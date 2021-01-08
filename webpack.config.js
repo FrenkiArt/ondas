@@ -1,11 +1,13 @@
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const isDev = process.env.NODE_ENV !== 'production';
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 // const webpack = require('webpack');
 const fs = require('fs');
+const isDev = process.env.NODE_ENV !== 'production';
+
+console.log('isDev', isDev);
 
 // Для Pug-а
 const PAGES_DIR = path.resolve(__dirname, `src/views/pages/`);
@@ -47,7 +49,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     // assetModuleFilename: '[name].[ext]',
   },
-  // devtool: isDev ? 'inline-source-map' : 'source-map',
+  devtool: isDev ? 'inline-source-map' : 'source-map',
   devServer: {
     compress: false,
     contentBase: path.join(__dirname, 'dist'),
@@ -106,7 +108,9 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: '/',
+              publicPath: isDev ? '/' : '/ondas/',
+              // publicPath: '/',
+              // publicPath: publicPathForMainCss,
             },
           },
           'css-loader',

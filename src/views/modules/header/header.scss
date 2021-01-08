@@ -1,23 +1,54 @@
 //- src/views/modules/header/header.scss
 
 .header {
-  // background-color: green;
   left: 0;
   position: absolute;
   right: 0;
   top: 48px;
   width: 100%;
-  z-index: 2;
+  z-index: 5;
+
+  @media screen and(max-width: 1050px) {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s;
+    pointer-events: none;
+  }
+
+  &.open {
+    @media screen and(max-width: 1050px) {
+      opacity: 1;
+      pointer-events: initial;
+    }
+  }
 
   .navigation {
     // .navigation__logo
     &__logo {
       margin-right: 76px;
+
+      @media screen and(max-width: 1050px) {
+        margin: 0px auto 60px;
+      }
+    }
+
+    // .navigation__nav
+    &__nav {
+      @media screen and(max-width: 1050px) {
+        text-align: center;
+      }
     }
 
     // .navigation__a
     &__a {
       margin-right: 24px;
+
+      @media screen and(max-width: 1050px) {
+        display: block;
+        margin: 10px auto;
+      }
 
       &:last-of-type {
         margin-right: 0;
@@ -25,8 +56,10 @@
     }
 
     .cntr {
-      @media screen and(max-width: 640px) {
+      @media screen and(max-width: 1050px) {
         flex-direction: column;
+        justify-content: center;
+        height: 100vh;
       }
     }
   }

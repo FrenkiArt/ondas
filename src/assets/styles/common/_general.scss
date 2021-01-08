@@ -49,6 +49,13 @@ h6 {
   margin: 0;
 }
 
+.h1 {
+  font-weight: 800;
+  font-size: 96px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
 .h2 {
   font-size: 40px;
   letter-spacing: 0.005em;
@@ -112,6 +119,14 @@ svg {
   &:hover {
     background-color: #18d1ff;
     color: #260a67;
+
+    svg {
+      fill: #260a67;
+    }
+  }
+
+  svg {
+    fill: #18aefc;
   }
 }
 
@@ -175,4 +190,41 @@ svg {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.link-white {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #18aefc;
+  }
+
+  svg {
+    margin-right: 12px;
+    fill: #18aefc;
+  }
+
+  span {
+    text-decoration-line: underline;
+  }
+}
+
+.small-text {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 200%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.m-l-11 {
+  margin-left: 11px;
 }

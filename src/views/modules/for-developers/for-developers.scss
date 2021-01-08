@@ -37,6 +37,10 @@
   // .for-developers__text
   &__text {
     max-width: 440px;
+
+    @media screen and(max-width: 1100px) {
+      margin: 0 auto;
+    }
   }
 
   // .for-developers__img
@@ -47,7 +51,7 @@
     margin-top: -50px;
     pointer-events: none;
 
-    @media screen and(max-width: 1000px) {
+    @media screen and(max-width: 1100px) {
       width: auto;
       margin-left: 0;
       margin-top: 0;
@@ -59,6 +63,11 @@
     margin-bottom: 5px;
     font-size: 13px;
     letter-spacing: 0.01em;
+
+    @media screen and(max-width: 1100px) {
+      max-width: 440px;
+      margin: 0 auto;
+    }
   }
 
   .cntr {
@@ -67,7 +76,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    @media screen and(max-width: 1000px) {
+    @media screen and(max-width: 1100px) {
+      justify-content: center;
     }
   }
 

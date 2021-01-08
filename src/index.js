@@ -1,11 +1,6 @@
 import 'normalize.css';
 import './assets/styles/style.scss';
 
-// import printMe from './print.js';
-
-// import './views/modules/block-img/styles/block-img.sass';
-// import './views/modules/block-img/js/block-img.js';
-
 // Модули нашего проекта
 import './views/modules/header/header.scss';
 import './views/modules/navigation/navigation.scss';
@@ -18,6 +13,7 @@ import './views/modules/for-developers/for-developers.scss';
 import './views/modules/about/about.scss';
 import './views/modules/for-players/for-players.scss';
 import './views/modules/for-investors/for-investors.scss';
+import './views/modules/first-screen/first-screen.scss';
 
 window.onresize = () => {
   setTimeout(() => {
@@ -117,4 +113,31 @@ function autoTogglerForIvestCarts(parentCount) {
       clearTimeout(window.ivestToggler);
     }
   }, 5000);
+}
+
+if (document.querySelector('.nav-btn')) {
+  document.querySelector('.nav-btn').addEventListener('click', clickNavHandler);
+  document.querySelectorAll('.navigation a').forEach((element) => {
+    element.addEventListener('click', closeNav);
+  });
+}
+
+/**
+ * Function for open/close navigation
+ * @param {event} e - is event click.
+ * @return {void}
+ */
+function clickNavHandler(e) {
+  document.querySelector('.nav-btn').classList.toggle('open');
+  document.querySelector('.header').classList.toggle('open');
+}
+
+/**
+ * Function for close navigation
+ * @param {event} e - is event click.
+ * @return {void}
+ */
+function closeNav(e) {
+  document.querySelector('.nav-btn').classList.remove('open');
+  document.querySelector('.header').classList.remove('open');
 }

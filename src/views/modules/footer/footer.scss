@@ -4,6 +4,7 @@
   align-items: center;
   background-image: url('/src/assets/svg/footer_stars.svg'),
     linear-gradient(180deg, #ff3389 -368.25%, #14043b 100.05%);
+  // background-image: url('/src/assets/svg/footer_stars.svg');
   background-position: center center, center center;
   background-repeat: no-repeat;
   background-size: contain, cover;
@@ -11,6 +12,21 @@
   flex-direction: column;
   padding: 80px 0 32px;
   position: relative;
+
+  /* &::after {
+    background-image: url('/src/assets/svg/footer_grdnt_bg.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    content: '';
+    height: 650px;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(0, -50%);
+    width: 100%;
+  } */
 
   // .footer__text
   &__text {
@@ -84,5 +100,6 @@
 
   .cntr {
     position: relative;
+    z-index: 2;
   }
 }

@@ -2,16 +2,46 @@
 
 .ecosystem {
   align-items: center;
-  background-image: url('/src/assets/svg/ecosystem_bg_2.svg');
+  background-image: url('/src/assets/svg/ecosystem_bg.svg');
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   margin-top: -5px;
   min-height: 1024px;
   padding: 100px 0;
   position: relative;
   z-index: 1;
+
+  &::before {
+    background-image: url('/src/assets/svg/ecosystem_grdnt_top_bg.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    content: '';
+    height: 2422px;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(0, -50%);
+    width: 100%;
+  }
+
+  &::after {
+    background-image: url('/src/assets/svg/ecosystem_grdnt_bg.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    content: '';
+    height: 2422px;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(0, 50%);
+    width: 100%;
+  }
 
   @media screen and(max-width: 1000px) {
     margin-top: -10px;
@@ -47,6 +77,8 @@
     align-items: center;
     display: flex;
     flex-shrink: 0;
+    position: relative;
+    z-index: 2;
 
     @media screen and(max-width: 1000px) {
       flex-direction: column;

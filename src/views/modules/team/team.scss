@@ -1,42 +1,18 @@
 //- src/views/modules/team/team.scss
 
 .team {
-  /* background: url('/src/assets/svg/team_stars.svg'),
-    radial-gradient(
-      421.16% 256.12% at 46.72% 31.86%,
-      #0b0238 2.55%,
-      #ff3389 100%
-    ); */
   background-image: url('/src/assets/svg/team_stars.svg'),
     linear-gradient(0deg, #ff3389 -368.25%, #14043b 100.05%);
+  // background-image: url('/src/assets/svg/team_stars.svg');
   background-position: center center, center center;
   background-repeat: no-repeat;
   background-size: contain, cover;
   padding: 80px 0 60px;
   position: relative;
 
-  /* @media screen and(max-width: 1400px) {
-    overflow: initial;
-  } */
-
-  &::before {
-    background: linear-gradient(
-      45deg,
-      rgba(0, 26, 255, 0) 61.73%,
-      #1a00bb 216.4%
-    );
-    bottom: 0;
-    content: '';
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-  }
-
   .cntr {
     position: relative;
+    z-index: 2;
   }
 
   .team-comet-left-1 {
@@ -93,6 +69,7 @@
     pointer-events: none;
     position: absolute;
     top: 0;
+    z-index: 2;
 
     @media screen and(max-width: 1400px) {
       left: 0;
@@ -106,6 +83,7 @@
     pointer-events: none;
     position: absolute;
     right: -220px;
+    z-index: 2;
 
     @media screen and(max-width: 1400px) {
       right: 16px;

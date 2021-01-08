@@ -50,17 +50,16 @@ h6 {
 }
 
 .h1 {
-  font-weight: 800;
-  font-size: 96px;
-  letter-spacing: -0.01em;
   color: #ffffff;
+  font-size: 96px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
 .h2 {
   font-size: 40px;
   letter-spacing: 0.005em;
   line-height: 66px;
-  // margin-bottom: 35px;
   margin-bottom: 18px;
 }
 
@@ -73,9 +72,9 @@ p {
 }
 
 ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 
 li {
@@ -99,23 +98,23 @@ svg {
 }
 
 .btn {
-  background-color: #260a67;
-  display: inline-flex;
-  justify-content: center;
   align-items: center;
-  white-space: nowrap;
-  padding: 18px 36px;
-  cursor: pointer;
-  transition: all 0.3s;
-  font-size: 12px;
-  line-height: 20;
-  letter-spacing: 1px;
-  color: #18d1ff;
+  background-color: #260a67;
   border-radius: 84px;
   box-sizing: border-box;
-  text-decoration: none;
+  color: #18d1ff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
   height: 56px;
+  justify-content: center;
+  letter-spacing: 1px;
+  line-height: 20;
   overflow: hidden;
+  padding: 18px 36px;
+  text-decoration: none;
+  transition: all 0.3s;
+  white-space: nowrap;
 
   &:hover {
     background-color: #18d1ff;
@@ -138,18 +137,18 @@ svg {
 }
 
 .link-read-more {
-  display: inline-flex;
   align-items: center;
-  cursor: pointer;
-  transition: all 0.3s;
   color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  transition: all 0.3s;
 
   // .link-read-more__text
   &__text {
-    font-weight: 900;
     font-size: 12px;
-    line-height: 20px;
+    font-weight: 900;
     letter-spacing: 0.08em;
+    line-height: 20px;
   }
 
   // .link-read-more__arrow
@@ -164,9 +163,9 @@ svg {
 
 .link-read-more__wrapper.open {
   .link-read-more__target {
-    position: relative;
     opacity: 1;
     pointer-events: initial;
+    position: relative;
   }
 
   .link-read-more {
@@ -175,17 +174,17 @@ svg {
 }
 
 .link-read-more__target {
-  position: absolute;
   opacity: 0;
   pointer-events: none;
+  position: absolute;
   transition: all 0.3s;
 }
 
 .link {
   color: #18aefc;
   cursor: pointer;
-  transition: all 0.3s;
   text-decoration: none;
+  transition: all 0.3s;
   white-space: nowrap;
 
   &:hover {
@@ -194,14 +193,14 @@ svg {
 }
 
 .link-white {
-  display: inline-flex;
   align-items: center;
-  font-weight: 900;
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: #ffffff;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 20px;
+  text-transform: uppercase;
   transition: all 0.3s;
 
   &:hover {
@@ -219,13 +218,17 @@ svg {
 }
 
 .small-text {
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 200%;
-  letter-spacing: 0.01em;
   color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  line-height: 200%;
 }
 
 .m-l-11 {
   margin-left: 11px;
+}
+
+.page-index {
+  // overflow: hidden;
 }

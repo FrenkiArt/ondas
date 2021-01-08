@@ -1,0 +1,34 @@
+//- src/views/modules/videoplayer/videoplayer.pug
+|
+|
+.videoplayer 
+  |
+  |
+  button.videoplayer__close
+    <svg width="18" height="18">
+      <use xlink:href="./assets/svg/svg_sprite.svg#close-video"></use>
+    </svg>
+  |
+  |
+  #player(data-plyr-provider='youtube' data-plyr-embed-id='9MjT0hgXYO8')
+  |
+  |
+  //-video#player(playsinline='' controls='')
+  //-  source(src='/path/to/video.mp4' type='video/mp4') 
+  //-  // Captions are optional
+  //-  track(default='')
+  |
+  | 
+  //-#player.plyr__video-embed
+  //-  iframe(
+  //-    src='https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1' 
+  //-    allowfullscreen='' 
+  //-    allowtransparency='' 
+  //-   allow='autoplay')
+  |
+  |
+|
+|
+.videoplayer-overlay 
+|
+|

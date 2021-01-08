@@ -1,6 +1,8 @@
 import 'normalize.css';
 import './assets/styles/style.scss';
 
+import '../node_modules/svgxuse/svgxuse.min.js';
+
 // Модули нашего проекта
 import './views/modules/header/header.scss';
 import './views/modules/navigation/navigation.scss';
@@ -14,6 +16,8 @@ import './views/modules/about/about.scss';
 import './views/modules/for-players/for-players.scss';
 import './views/modules/for-investors/for-investors.scss';
 import './views/modules/first-screen/first-screen.scss';
+import './views/modules/videoplayer/videoplayer.scss';
+import './views/modules/videoplayer/videoplayer.js';
 
 window.onresize = () => {
   setTimeout(() => {

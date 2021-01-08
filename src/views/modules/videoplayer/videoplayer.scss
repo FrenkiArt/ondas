@@ -1,0 +1,77 @@
+//- src/views/modules/videoplayer/videoplayer.scss
+
+.videoplayer {
+  // background-size: 528px 259px;
+  // height: 640px;
+  background-color: #333a3e;
+  background-image: url('/src/assets/svg/ondas_logo.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  border-radius: 20px;
+  left: 50%;
+  max-width: 960px;
+  min-height: 540px;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
+  width: 100%;
+  z-index: 100;
+
+  &.open {
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  /* iframe {
+    height: 100%;
+    width: 100%;
+  } */
+
+  // .videoplayer__close
+  &__close {
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    z-index: 2;
+    border-radius: 100%;
+    background-color: rgba(10, 0, 73, 0);
+    transition: all 0.3s;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: rgba(10, 0, 73, 0.5);
+    }
+  }
+}
+
+:root {
+  --plyr-color-main: rgba(10, 0, 73, 1);
+}
+
+.videoplayer-overlay {
+  background-color: rgba(10, 0, 73, 0.5);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99;
+
+  &.open {
+    opacity: 1;
+    pointer-events: initial;
+  }
+}

@@ -7,13 +7,12 @@
       #0b0238 2.55%,
       #ff3389 100%
     ); */
-  background: url('/src/assets/svg/team_stars.svg'),
+  background-image: url('/src/assets/svg/team_stars.svg'),
     linear-gradient(0deg, #ff3389 -368.25%, #14043b 100.05%);
   background-position: center center, center center;
   background-repeat: no-repeat;
   background-size: contain, cover;
-  overflow-x: hidden;
-  padding: 80px 0 90px;
+  padding: 80px 0 60px;
   position: relative;
 
   /* @media screen and(max-width: 1400px) {
@@ -122,6 +121,7 @@
   }
 
   .h2 {
+    margin-bottom: 36px;
     position: relative;
     text-align: center;
   }

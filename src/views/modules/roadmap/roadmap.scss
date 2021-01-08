@@ -1,9 +1,6 @@
 //- src/views/modules/roadmap/roadmap.scss
 
 .roadmap {
-  position: relative;
-  min-height: 1024px;
-  padding: 175px 0 175px;
   /* background: url('/src/assets/svg/roadmap_stars.svg'),
     radial-gradient(
       101.06% 142.89% at 73.25% 90.95%,
@@ -13,11 +10,14 @@
   // background-position: center center, center center;
   // background-size: contain, cover;
 
-  background: url('/src/assets/svg/roadmap_bg.svg');
+  background-image: url('/src/assets/svg/roadmap_bg.svg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -5px;
+  min-height: 1024px;
+  padding: 175px 0 175px;
+  position: relative;
 
   @media screen and(max-width: 1100px) {
     padding: 50px 0 50px;
@@ -56,17 +56,18 @@
 
   // .roadmap__fragments
   &__fragments {
-    position: absolute;
-    top: 50px;
-    left: 0px;
+    left: 50%;
     pointer-events: none;
+    position: absolute;
+    top: 40px;
+    transform: translate(-84%, 0);
   }
 
   // .roadmap__left
   &__left {
+    // background-color: #cecece;
     max-width: 440px;
     width: 100%;
-    // background-color: #cecece;
 
     @media screen and(max-width: 1100px) {
       margin-bottom: 50px;
@@ -88,10 +89,10 @@
   }
 
   .cntr {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     position: relative;
     z-index: 2;
 
@@ -102,8 +103,8 @@
 }
 
 .way {
-  width: 555px;
   max-width: 100%;
+  width: 555px;
 
   @media screen and(max-width: 640px) {
     width: 100%;
@@ -111,14 +112,14 @@
 
   // .way__item
   &__item {
-    display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    display: flex;
+    margin-bottom: 64px;
     position: relative;
 
     @media screen and(max-width: 640px) {
-      flex-direction: column;
       align-items: flex-start;
+      flex-direction: column;
     }
 
     &:last-of-type {
@@ -150,22 +151,22 @@
 
       .way__circle {
         &::after {
-          position: absolute;
-          top: 26px;
+          background-image: url('/src/assets/svg/way_1.svg');
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
           content: '';
-          width: 69px;
           height: 78px;
           left: 8px;
-          background-image: url('/src/assets/svg/way_1.svg');
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center center;
+          position: absolute;
+          top: 26px;
+          width: 69px;
         }
       }
     }
 
     &:nth-of-type(2) {
-      max-width: 471px;
+      max-width: 482px;
 
       @media screen and(max-width: 640px) {
         max-width: 100%;
@@ -173,16 +174,16 @@
 
       .way__circle {
         &::after {
-          position: absolute;
-          top: 26px;
-          content: '';
-          width: 80px;
-          height: 90px;
-          right: 8px;
           background-image: url('/src/assets/svg/way_2.svg');
-          background-size: contain;
-          background-repeat: no-repeat;
           background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: '';
+          height: 90px;
+          position: absolute;
+          right: 4px;
+          top: 26px;
+          width: 80px;
         }
       }
     }
@@ -196,16 +197,16 @@
 
       .way__circle {
         &::after {
-          position: absolute;
-          top: 26px;
+          background-image: url('/src/assets/svg/way_3.svg');
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
           content: '';
-          width: 79px;
           height: 120px;
           left: 6px;
-          background-image: url('/src/assets/svg/way_3.svg');
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center center;
+          position: absolute;
+          top: 26px;
+          width: 79px;
         }
       }
     }
@@ -219,16 +220,16 @@
 
       .way__circle {
         &::after {
-          position: absolute;
-          top: 26px;
-          content: '';
-          width: 72px;
-          height: 146px;
-          right: 8px;
           background-image: url('/src/assets/svg/way_4.svg');
-          background-size: contain;
-          background-repeat: no-repeat;
           background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: '';
+          height: 146px;
+          position: absolute;
+          right: 8px;
+          top: 26px;
+          width: 72px;
         }
       }
     }
@@ -244,14 +245,15 @@
 
   // .way__date
   &__date {
-    line-height: 15px;
-    letter-spacing: 0.08em;
     flex-shrink: 0;
+    letter-spacing: 0.08em;
+    line-height: 15px;
     width: 45px;
 
     @media screen and(max-width: 640px) {
-      width: 40px;
+      // width: 40px;
       width: auto;
+
       br {
         display: none;
       }
@@ -264,32 +266,32 @@
 
   // .way__circle
   &__circle {
-    flex-shrink: 0;
-    width: 16px;
-    height: 16px;
     background: linear-gradient(339.97deg, #005af6 31.15%, #00ccff 88.36%);
-    box-shadow: 0px 0px 24px #0089f9;
-    position: relative;
     border-radius: 100%;
-    z-index: 2;
+    box-shadow: 0px 0px 24px #0089f9;
+    flex-shrink: 0;
+    height: 16px;
     margin: 0 22px;
+    position: relative;
+    width: 16px;
+    z-index: 2;
 
     @media screen and(max-width: 640px) {
       margin: 16px 16px 16px 0;
     }
 
     &::before {
+      background: linear-gradient(339.97deg, #005af6 31.15%, #00ccff 88.36%);
+      border-radius: 100%;
       content: '';
-      position: absolute;
-      width: 28px;
       height: 28px;
       left: 50%;
+      opacity: 0.3;
+      position: absolute;
       top: 50%;
       transform: translate(-50%, -50%);
-      background: linear-gradient(339.97deg, #005af6 31.15%, #00ccff 88.36%);
-      opacity: 0.3;
+      width: 28px;
       z-index: -1;
-      border-radius: 100%;
     }
 
     &::after {
@@ -301,13 +303,13 @@
 
   // .way__list
   &__list {
-    font-weight: 900;
     font-size: 13px;
-    line-height: 21px;
+    font-weight: 900;
     letter-spacing: 0.08em;
+    line-height: 21px;
     list-style-type: none;
 
-    li {
-    }
+    /* li {
+    } */
   }
 }

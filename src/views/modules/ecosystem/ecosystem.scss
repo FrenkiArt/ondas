@@ -1,16 +1,16 @@
 //- src/views/modules/ecosystem/ecosystem.scss
 
 .ecosystem {
-  display: flex;
   align-items: center;
-  min-height: 1024px;
-  padding: 100px 0;
-  background: url('/src/assets/svg/ecosystem_bg_2.svg');
-  background-size: cover;
+  background-image: url('/src/assets/svg/ecosystem_bg_2.svg');
   background-position: center center;
   background-repeat: no-repeat;
-  position: relative;
+  background-size: cover;
+  display: flex;
   margin-top: -5px;
+  min-height: 1024px;
+  padding: 100px 0;
+  position: relative;
   z-index: 1;
 
   @media screen and(max-width: 1000px) {
@@ -18,8 +18,8 @@
   }
 
   @media screen and(max-width: 640px) {
-    padding: 70px 0 40px;
     min-height: auto;
+    padding: 70px 0 40px;
   }
 
   // .ecosystem__left
@@ -28,8 +28,8 @@
 
   // .ecosystem__right
   &__right {
-    max-width: 440px;
     flex-shrink: 0;
+    max-width: 440px;
     width: 100%;
 
     p {
@@ -44,9 +44,9 @@
   }
 
   .cntr {
-    flex-shrink: 0;
-    display: flex;
     align-items: center;
+    display: flex;
+    flex-shrink: 0;
 
     @media screen and(max-width: 1000px) {
       flex-direction: column;

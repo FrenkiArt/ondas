@@ -1,15 +1,15 @@
 //- src/views/modules/about/about.scss
 
 .about {
-  min-height: 1024px;
-  padding: 160px 0;
-  background: url('/src/assets/svg/about_bg.svg');
-  background-size: cover;
+  align-items: center;
+  background-image: url('/src/assets/svg/about_bg.svg');
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  align-items: center;
   margin-top: -2px;
+  min-height: 1024px;
+  padding: 160px 0;
 
   @media screen and(max-width: 640px) {
     padding: 70px 0 40px;
@@ -34,11 +34,11 @@
   }
 
   .cntr {
-    flex-shrink: 0;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    display: flex;
+    flex-shrink: 0;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     @media screen and(max-width: 1100px) {
       justify-content: center;
@@ -47,27 +47,27 @@
 }
 
 .about-cart {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 96px 0 62px;
-  justify-content: space-between;
-  background: url('/src/assets/svg/about-cart-bg.svg'),
+  background-image: url('/src/assets/svg/about-cart-bg.svg'),
     linear-gradient(357.94deg, #bc187a -96.9%, #23006d 116.72%),
     linear-gradient(
       197.7deg,
       rgba(65, 34, 255, 0.8) 3.03%,
       rgba(209, 24, 102, 0.8) 95.77%
     );
-  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 10px;
-  width: 340px;
+  display: flex;
+  flex-direction: column;
   height: 420px;
-  top: 95px;
+  justify-content: space-between;
   left: 110px;
+  padding: 96px 0 62px;
+  position: absolute;
+  top: 95px;
+  width: 340px;
 
   @media screen and(max-width: 640px) {
     top: 50%;

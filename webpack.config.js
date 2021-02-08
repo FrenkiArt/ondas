@@ -108,7 +108,8 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: isDev ? '/' : '/ondas/',
+              publicPath: isDev ? '/' : '/',
+              // publicPath: isDev ? '/' : '/ondas/',
               // publicPath: '/',
               // publicPath: publicPathForMainCss,
             },

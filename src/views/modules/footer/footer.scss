@@ -2,8 +2,10 @@
 
 .footer {
   align-items: center;
+  //background-image: url('/src/assets/svg/footer_stars.svg'),
+  //  linear-gradient(180deg, #ff3389 -368.25%, #14043b 100.05%);
   background-image: url('/src/assets/svg/footer_stars.svg'),
-    linear-gradient(180deg, #ff3389 -368.25%, #14043b 100.05%);
+    linear-gradient(180deg, rgba(255, 51, 137, 1) -368.25%, transparent 100.05%);;
   // background-image: url('/src/assets/svg/footer_stars.svg');
   background-position: center center, center center;
   background-repeat: no-repeat;

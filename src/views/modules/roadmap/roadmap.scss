@@ -5,12 +5,13 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: -5px;
+  // margin-top: -5px;
   min-height: 1024px;
   padding: 175px 0 175px;
   position: relative;
+  z-index: 2;
 
-  &::after {
+  /*&::after {
     background-image: url('/src/assets/svg/roadmap_grdnt_bg.svg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -25,6 +26,40 @@
     transform: translate(0, 50%);
     width: 100%;
     z-index: 1;
+  }*/
+
+  &::after { 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -50px;
+    content: ''; 
+    width: 10px;
+    height: 10px;
+    left: -50px; 
+    pointer-events: none;
+    position: absolute;  
+    background: linear-gradient(50.77deg, rgba(0, 26, 255, 0) 75.82%, #1A00BB 182.86%);
+    transform: rotate(-180deg); 
+    box-shadow: 0px 0px 10000px 125px #1A00BB;
+  }
+
+  &::before { 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -50px;
+    content: ''; 
+    width: 0px;
+    height: 150px;
+    right: -50px; 
+    pointer-events: none;
+    position: absolute;  
+    background-image: linear-gradient(50.77deg, rgba(0, 26, 255, 0) 75.82%, rgba(255, 51, 137, 0.4) 182.86%);
+    transform: rotate(-180deg); 
+    box-shadow: 0px 0px 10000px 125px rgba(255, 51, 137, 0.4);
+    background-color: rgba(255, 51, 137, 0.28);
+    border-radius: 100%;
   }
 
   @media screen and(max-width: 1100px) {

@@ -7,6 +7,8 @@
   background-size: 80%;
   min-height: 1024px;
   padding: 276px 0 86px;
+  position: relative;
+  z-index: 2;
 
   @media screen and(max-width: 640px) {
     min-height: auto;

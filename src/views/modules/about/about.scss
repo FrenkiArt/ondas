@@ -12,19 +12,43 @@
   padding: 160px 0;
   position: relative;
 
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    // border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    //background-color: #cecece;
+    transform: rotate(45deg);
+    // box-shadow: 0px 0px 1000000000px 0px #1A00BB;
+    box-shadow: 0px 0px 10000px 125px rgba(255, 51, 137, 1);
+    background-color: transparent;
+
+  }
+
   &::after {
-    background-image: url('/src/assets/svg/about_grdt_bg.svg');
+    // background-image: url('/src/assets/svg/about_grdt_bg.svg');
+    //background-image: radial-gradient(
+    //  699.19% 561.32% at 85.84% 25.65%,
+    //  rgba(11, 2, 56, 0) 9.9%,
+    //  #e6217f 29.68%
+    //);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 0;
     content: '';
-    height: 2422px;
-    left: 0;
+    // height: 2422px;
+    height: 100%;
+    left: 0; 
+    right: 0;
     pointer-events: none;
     position: absolute;
-    transform: translate(0, 50%);
-    width: 100%;
+    width: 100%; 
+    // z-index: 2; 
+    background-image: linear-gradient(0deg, rgba(255, 51, 137, 0.2) 0%, transparent 25%);
   }
 
   @media screen and(max-width: 640px) {

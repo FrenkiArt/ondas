@@ -7,29 +7,31 @@
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
-  margin-top: -5px;
+  // margin-top: -5px;
   min-height: 1024px;
   padding: 100px 0;
   position: relative;
   z-index: 1;
 
-  &::before {
-    background-image: url('/src/assets/svg/ecosystem_grdnt_top_bg.svg');
+  /*&::before {
+    // background-image: url('/src/assets/svg/ecosystem_grdnt_top_bg.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
     content: '';
-    height: 2422px;
+    height: 100%;
     left: 0;
+    right: 0;
     pointer-events: none;
-    position: absolute;
-    transform: translate(0, -50%);
-    width: 100%;
-  }
+    position: absolute; 
+    width: 100%; 
+    background-image: radial-gradient(699.19% 561.32% at 85.84% 25.65%, rgba(11, 2, 56, 0) 9.9%, #E6217F 29.68%);
+    transform: rotate(180deg);
+  }*/
 
-  &::after {
-    background-image: url('/src/assets/svg/ecosystem_grdnt_bg.svg');
+  /*&::after {
+    // background-image: url('/src/assets/svg/ecosystem_grdnt_bg.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,6 +43,22 @@
     position: absolute;
     transform: translate(0, 50%);
     width: 100%;
+  }*/
+
+  &::after { 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -50px;
+    content: ''; 
+    width: 10px;
+    height: 10px;
+    left: -50px; 
+    pointer-events: none;
+    position: absolute;  
+    background: linear-gradient(50.77deg, rgba(0, 26, 255, 0) 75.82%, #1A00BB 182.86%);
+    transform: rotate(-180deg); 
+    box-shadow: 0px 0px 10000px 125px #1A00BB;
   }
 
   @media screen and(max-width: 1000px) {

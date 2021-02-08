@@ -1,8 +1,10 @@
 //- src/views/modules/team/team.scss
 
 .team {
+  //background-image: url('/src/assets/svg/team_stars.svg'),
+  //  linear-gradient(0deg, #ff3389 -368.25%, #14043b 100.05%);
   background-image: url('/src/assets/svg/team_stars.svg'),
-    linear-gradient(0deg, #ff3389 -368.25%, #14043b 100.05%);
+    linear-gradient(0deg, rgba(255, 51, 137, 1) -368.25%, transparent 100.05%);
   // background-image: url('/src/assets/svg/team_stars.svg');
   background-position: center center, center center;
   background-repeat: no-repeat;
@@ -71,6 +73,8 @@
     top: 0;
     z-index: 2;
 
+    filter: drop-shadow(10px 10px 50px #1A00BB);
+
     @media screen and(max-width: 1400px) {
       left: 0;
     }
@@ -84,6 +88,8 @@
     position: absolute;
     right: -220px;
     z-index: 2;
+
+    filter: drop-shadow(10px 10px 50px #1A00BB);
 
     @media screen and(max-width: 1400px) {
       right: 16px;

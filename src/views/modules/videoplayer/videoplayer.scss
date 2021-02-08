@@ -16,7 +16,7 @@
   overflow: hidden;
   pointer-events: none;
   position: fixed;
-  top: 50%;
+  top: -150%;
   transform: translate(-50%, -50%);
   transition: opacity 0.3s;
   width: 100%;
@@ -25,6 +25,7 @@
   &.open {
     opacity: 1;
     pointer-events: initial;
+    top: 50%;
   }
 
   /* iframe {
